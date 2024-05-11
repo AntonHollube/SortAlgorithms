@@ -1,4 +1,3 @@
-package merge_sort;
 import java.util.Random;
 import java.util.Arrays;
 

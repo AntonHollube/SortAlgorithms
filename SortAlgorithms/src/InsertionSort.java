@@ -1,5 +1,3 @@
-package insertion_sort;
-
 import java.util.Arrays;
 
 public class InsertionSort {
