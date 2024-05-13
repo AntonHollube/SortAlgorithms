@@ -3,40 +3,9 @@ import java.util.Arrays;
 
 public class MergeSort {
 
-    public static void main(String[] args) {
-        int n = Integer.parseInt(args[0]);
-        //int n = 10;
-        int[] A = (new Random()).ints(n, Integer.MIN_VALUE, Integer.MAX_VALUE).toArray();
-        int[] B = (new Random()).ints(n, Integer.MIN_VALUE, Integer.MAX_VALUE).toArray();
-
-        long start = System.nanoTime();
-        MergeSort.mergeSort(A);
-        long end = System.nanoTime();
-
-        long start1 = System.nanoTime();
-        MergeSort.insertionSort(B);
-        long end1 = System.nanoTime();
-
-        System.out.println("MergeSort: " + (end - start) / 1000000.0 + " ms");
-        System.out.println("InsertionSort: " + (end1 - start1) / 1000000.0 + " ms");
-    }
-
     //INITIALISIERUNG VON MERGESORT
     public static void mergeSort(int[] A) {
         mergeSort(A, 0, A.length - 1);
-    }
-
-    // CODE für INSERTIONSORT
-    public static void insertionSort(int[] a) {
-        for (int i = 1; i < a.length; i++) {
-            int key = a[i];
-            int j = i - 1;
-            while (j >= 0 && key < a[j]) {
-                a[j + 1] = a[j];
-                j--;
-            }
-            a[j + 1] = key;
-        }
     }
 
     //CODE für MERGESORT

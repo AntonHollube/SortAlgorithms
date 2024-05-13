@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Main {
     public static void main(String args[])
     {
@@ -7,7 +9,7 @@ public class Main {
         printArray(arr);
 
         MergeSort ob = new MergeSort();
-        ob.sort(arr, 0, arr.length - 1);
+      //  ob.sort(arr, 0, arr.length - 1);
 
         System.out.println("\nSorted array is");
         printArray(arr);
@@ -21,5 +23,5 @@ public class Main {
         System.out.println();
     }
 
-    // Driver code
+
 }
