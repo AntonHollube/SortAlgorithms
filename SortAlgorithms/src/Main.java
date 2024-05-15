@@ -1,4 +1,3 @@
-import java.util.Random;
 
 public class Main {
     public static void main(String args[])
@@ -10,6 +9,9 @@ public class Main {
 
         // MergeSort ob = new MergeSort();
         // ob.sort(arr, 0, arr.length - 1);
+
+        //Quicksort.quickSort(arr, 0, size - 1);
+
         HeapSort hs = new HeapSort();
         hs.sort(arr);
 
