@@ -8,8 +8,10 @@ public class Main {
         System.out.println("Given array is");
         printArray(arr);
 
-        MergeSort ob = new MergeSort();
-      //  ob.sort(arr, 0, arr.length - 1);
+        // MergeSort ob = new MergeSort();
+        // ob.sort(arr, 0, arr.length - 1);
+        HeapSort hs = new HeapSort();
+        hs.sort(arr);
 
         System.out.println("\nSorted array is");
         printArray(arr);
@@ -22,6 +24,4 @@ public class Main {
             System.out.print(arr[i] + " ");
         System.out.println();
     }
-
-
 }
