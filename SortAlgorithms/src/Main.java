@@ -2,7 +2,7 @@
 public class Main {
     public static void main(String args[])
     {
-        int arr[] = { 12, 11, 13, 5, 6, 7 };
+        int arr[] = {15, 62, 44, 87, 9, 18, 24, 74, 83, 25, 93, 46, 58};
 
         System.out.println("Given array is");
         printArray(arr);
@@ -10,11 +10,13 @@ public class Main {
         // MergeSort ob = new MergeSort();
         // ob.sort(arr, 0, arr.length - 1);
 
-        //Quicksort.quickSort(arr, 0, size - 1);
+       // int size = arr.length;
+       // Quicksort.quickSort(arr, 0, size - 1);
 
         HeapSort hs = new HeapSort();
         hs.sort(arr);
 
+        // Main.bubbleSort(arr);
         System.out.println("\nSorted array is");
         printArray(arr);
     }
