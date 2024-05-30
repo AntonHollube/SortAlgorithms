@@ -1,11 +1,8 @@
-// Quick sort in Java
-
-import java.util.Arrays;
 
 class Quicksort {
 
     // method to find the partition position
-    static int partition(int array[], int low, int high) {
+    public static int partition(int array[], int low, int high) {
 
         // choose the rightmost element as pivot
         int pivot = array[high];
@@ -39,7 +36,7 @@ class Quicksort {
         return (i + 1);
     }
 
-    static void quickSort(int array[], int low, int high) {
+    public static void quickSort(int array[], int low, int high) {
         if (low < high) {
 
             // find pivot element such that
